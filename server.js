@@ -47,7 +47,7 @@ app.get("/pokemon", handleGetPokemon);
 app.use((error, req, res, next) => {
   let response;
   if (process.env.Node_ENV === "production") {
-    response = { error: { message: "Servr Error" } };
+    response = { error: { message: "Server Error" } };
   } else {
     response = { error };
   }
